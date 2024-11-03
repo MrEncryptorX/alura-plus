@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+/* Reset de margens e espaçamentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Definindo cores e fonte principal como variáveis CSS */
+    --cor-primaria: #FFFFFF; /* cor branca */
+    --cor-secundaria: #C0C0C0; /* cor cinza */
+    --cor-terciaria: #167BF7; /* cor azul */
+    --cor-fundo: #00030C; /* cor de fundo */
+    --fonte-principal: "Inter";
+}
+
+body {
+    background-color: var(--cor-fundo); /* cor de fundo do corpo da página */
+    color: var(--cor-primaria); /* cor do texto */
+    font-family: var(--fonte-principal); /* fonte principal */
+    font-weight: 400; /* peso padrão do texto */
+}
+
+.principal {
+    background-image: url("assets/Background.png"); /* imagem de fundo */
+    background-repeat: no-repeat; /* impede repetição da imagem */
+    background-size: contain; /* ajusta imagem para caber no container */
+    align-items: center; /* alinha itens ao centro verticalmente */
+    text-align: center; /* centraliza o texto horizontalmente */
+}
+
+.container__titulo {
+    font-size: 28px; /* tamanho do título */
+    font-weight: 700; /* deixa o título em negrito */
+}
+
+.container {
+    height: 100vh; /* altura total da tela */
+    display: grid; /* ativa o grid layout */
+    grid-template-columns: 50% 50%; /* divide o container em duas colunas iguais */
+}
+
+.container__botao {
+    background-color: var(--cor-terciaria); /* cor de fundo do botão */
+    border-radius: 8px; /* cantos arredondados */
+    padding: 1em; /* espaçamento interno */
+    color: var(--cor-primaria); /* cor do texto */
+    display: block; /* exibe o botão como bloco */
+    text-decoration: none; /* remove o sublinhado do link */
+    width: 88%; /* largura do botão */
+    text-align: center; /* centraliza o texto do botão */
+    margin-bottom: 1em; /* margem inferior */
+    font-size: 16px; /* tamanho da fonte */
+}
+
+.container__botao:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+.botao_secundario {
+    background-color: transparent; /* fundo transparente */
+    border: 2px solid var(--cor-primaria); /* borda com cor primária */
+    border-radius: 8px; /* cantos arredondados */
+}
+
+.container_aviso {
+    font-size: 12px; /* tamanho do texto */
+    color: var(--cor-secundaria); /* cor do texto */
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* margem superior e inferior */
+}
+
+.container__caixa {
+    margin: 0 4em; /* margem horizontal */
+}
+
+.secundario__imagem {
+    width: 80%; /* largura da imagem */
+}
+
+.segundo {
+    align-items: center; /* alinha os itens ao centro */
+    margin: 0 6em; /* margem horizontal */
+}
+
+.descricao__titulo {
+    font-family: var(--fonte-principal); /* fonte principal */
+    font-weight: 700; /* peso da fonte */
+    font-size: 48px; /* tamanho da fonte */
+    color: var(--cor-primaria); /* cor do texto */
+    margin-bottom: 0.2em; /* margem inferior */
+}
+
+.descricao__texto {
+    font-weight: 150; /* peso leve do texto */
+    font-size: 16px; /* tamanho da fonte */
+    color: var(--cor-secundaria); /* cor do texto */
+}
+
+.terceiro {
+    align-items: center; /* alinha os itens ao centro */
+    margin: 0 6em; /* margem horizontal */
+}
+
+.terceira__imagem {
+    margin-left: 2em; /* margem à esquerda */
+}
+
+.descricao__telas__texto {
+    font-weight: 150; /* peso leve do texto */
+    font-size: 16px; /* tamanho da fonte */
+    color: var(--cor-primaria); /* cor do texto */
+    margin-right: 1.8em; /* margem à direita */
+    margin-bottom: 1em; /* margem inferior */
+}
+
+.descricao__telas__botao {
+    background-color: var(--cor-terciaria); /* cor de fundo do botão */
+    border-radius: 8px; /* cantos arredondados */
+    padding: 1em; /* espaçamento interno */
+    color: var(--cor-primaria); /* cor do texto */
+    display: inline-block; /* exibe o botão como bloco em linha */
+    text-decoration: none; /* remove sublinhado */
+    width: 22.7%; /* largura do botão */
+    text-align: center; /* centraliza o texto */
+    margin-bottom: 1em; /* margem inferior */
+    font-size: 16px; /* tamanho da fonte */
+}
+
+.descricao__telas__botao:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+.quarta {
+    align-items: center; /* alinha os itens ao centro */
+    margin: 0 6em; /* margem horizontal */
+}
+
+.descricao__titulo__notebook {
+    font-family: var(--fonte-principal); /* fonte principal */
+    font-weight: 700; /* peso da fonte */
+    font-size: 48px; /* tamanho da fonte */
+    color: var(--cor-primaria); /* cor do texto */
+    margin-bottom: 0.2em; /* margem inferior */
+}
+
+.descricao__texto__notebook {
+    font-weight: 150; /* peso leve do texto */
+    font-size: 16px; /* tamanho da fonte */
+    color: var(--cor-secundaria); /* cor do texto */
+}
+
+.dispositivos__titulo {
+    margin-bottom: 1em; /* margem inferior */
+    font-size: 48px; /* tamanho da fonte */
+}
+
+.dispositivos__lista {
+    display: flex; /* ativa o flexbox para a lista */
+    justify-content: center; /* centraliza os itens horizontalmente */
+    list-style-type: none; /* remove marcadores da lista */
+}
+
+.dispositivos {
+    text-align: center; /* centraliza o texto */
+    color: var(--cor-primaria); /* cor do texto */
+}
+
+.lista__item {
+    font-size: 32px; /* tamanho da fonte */
+    color: var(--cor-primaria); /* cor do texto */
+    margin-bottom: 4em; /* margem inferior */
+}
+
+footer {
+    background-color: #00030C; /* cor de fundo */
+    padding: 1em; /* espaçamento interno */
+    color: #C0C0C0; /* cor secundária */
+    text-align: center; /* centraliza o texto */
+    display: flex; /* ativa o flexbox */
+    flex-direction: column; /* organiza itens em coluna */
+    align-items: center; /* alinha itens ao centro */
+}
+
+.imagem__logo {
+    display: flex; /* ativa o flexbox */
+    justify-content: center; /* centraliza a logo horizontalmente */
+    align-items: center; /* centraliza a logo verticalmente */
+    margin: 0 auto; /* centraliza a logo no container */
+    margin-bottom: 2em; /* margem inferior */
+    width: 6%; /* largura da logo */
+    text-align: center; /* centraliza o texto */
+}
+
+.lista__rodape {
+    display: flex; /* ativa o flexbox */
+    justify-content: center; /* centraliza os itens horizontalmente */
+    list-style: none; /* remove marcadores da lista */
+    padding: 0; /* remove espaçamento interno */
+    margin: 0; /* remove margem */
+    gap: 1em; /* espaçamento entre itens */
+    margin-bottom: 1em; /* margem inferior */
+}
+
+.lista__link a {
+    text-decoration: none; /* remove sublinhado do link */
+    color: var(--cor-primaria); /* cor do texto do link */
+    font-size: 14px; /* tamanho da fonte */
+}
+
+.rodape__texto {
+    margin: 1em 0; /* margem superior e inferior */
+    line-height: 1.5; /* altura da linha */
+    color: var(--cor-secundaria); /* cor do texto */
+    font-size: 14px; /* tamanho da fonte */
+    max-width: 75%; /* largura máxima para limitar o texto */
+}
+
+.lista__link a:hover {
+    color: var(--cor-terciaria);
+}
+
+
+.lista__link a:active {
+    color: #C0C0C0;
+}
